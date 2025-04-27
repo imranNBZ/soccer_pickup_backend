@@ -7,10 +7,10 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // routes
-const gameRoutes = require("../pickup-soccer-app-backend/routes/game");
-const userRoutes = require("../pickup-soccer-app-backend/routes/uesrs");
-const authRoutes = require("../pickup-soccer-app-backend/routes/auth");
-const adminRoutes = require("../pickup-soccer-app-backend/routes/admin");
+const gameRoutes = require("./routes/game");
+const userRoutes = require("./routes/uesrs");
+const authRoutes = require("./routes/auth");
+const adminRoutes = require("./routes/admin");
 
 
 // Middleware
