@@ -1,4 +1,4 @@
-const db = require("../db"); // adjust path if needed
+const db = require("./db"); // adjust path if needed
 
 async function makeAdminByUsername(username) {
   try {
