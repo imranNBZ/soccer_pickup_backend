@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const db = require("../db");
-const authenticateToken = require("./middlware/auth");
+const authenticateToken = require("../middlware/auth");
 
 const bcrypt = require("bcrypt");
 const SALT_ROUNDS = 10;

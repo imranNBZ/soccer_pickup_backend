@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const db = require("../db");
-const authenticateToken = require("./middlware/auth");
-const requireAdmin = require("./middlware/requireAdmin");
+const authenticateToken = require("../middlware/auth");
+const requireAdmin = require("../middlware/requireAdmin");
 
 // 🔐 Get list of all users
 router.get("/users", authenticateToken, requireAdmin, async (req, res) => {
